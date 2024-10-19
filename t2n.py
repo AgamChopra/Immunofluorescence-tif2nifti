@@ -78,9 +78,9 @@ def load_rgb_stack(folder_path, sample_id):
     folder_path_g = os.path.join(folder_path, f'{sample_id}_w523_z')
     folder_path_b = os.path.join(folder_path, f'{sample_id}_w594_z')
 
-    stack_r = load_stack_to_3d_matrix(folder_path_r)
+    stack_b = load_stack_to_3d_matrix(folder_path_r)
     stack_g = load_stack_to_3d_matrix(folder_path_g)
-    stack_b = load_stack_to_3d_matrix(folder_path_b)
+    stack_r = load_stack_to_3d_matrix(folder_path_b)
 
     max_dims = calculate_max_dim_length(stack_r, stack_g, stack_b)
 
